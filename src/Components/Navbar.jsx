@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <nav className="bg-gray-900 text-white w-full p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold">Sajalu's News</Link>
+        <Link to="/" className="text-xl font-bold">Trend Press</Link>
         
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
@@ -18,10 +18,10 @@ function Navbar() {
         </div>
         
         <div className={`md:flex md:items-center space-x-6 absolute md:static bg-gray-900 md:bg-transparent w-full left-0 md:w-auto transition-transform duration-300 ease-in-out ${isOpen ? 'top-15 z-20' : '-top-60'}`}>
-          <Link  className="block px-4 py-2 hover:text-gray-400">Home</Link>
-          <Link  className="block px-4 py-2 hover:text-gray-400">News</Link>
-          <Link  className="block px-4 py-2 hover:text-gray-400">Sports</Link>
-          <Link  className="block px-4 py-2 hover:text-gray-400">Business</Link>
+          <Link to='/ '  className="block px-4 py-2 hover:text-gray-400">Home</Link>
+          <Link to='/news' className="block px-4 py-2 hover:text-gray-400">News</Link>
+          <Link to='/saved' className="block px-4 py-2 hover:text-gray-400">Saved News</Link>
+          
         </div>
       </div>
     </nav>
